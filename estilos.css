@@ -20,11 +20,11 @@
     width: 100%;
 }
 
-.body{
+body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #b96331;
 }
 
 main { 
@@ -32,17 +32,36 @@ main {
 } 
 
 .cabecalho-link { 
-  color: #fff; 
+  color: #7a3d14; 
   text-decoration: none;
 } 
 
 h1 { 
-  color: #fff; 
+  color: #b37031; 
   font-size: 24px;
 } 
 
 footer{
-    background-color: #fff;
+    background-color: #b8773b;
     padding: 15px 25px;
-    color: #fff;
+    color: #a14b31;
+}
+
+.cartao-interno{
+  position: relative;
+ transition: transform 0.8s;
+}
+
+.cartao-hover .cartao-interno{
+  transform: rotateY(180deg);
+}
+.cartao-frente, .cartao-verso{
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+  backface-visibility: hidden;
+}
+
+.cartao-verso{
+  transform: rotateY(180deg);
 }
